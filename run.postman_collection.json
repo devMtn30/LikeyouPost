@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "6a555419-e1b9-4926-be3c-6691b32f025f",
+		"name": "콜버스랩",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "글 목록",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "SPECIAL 1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts"
+					]
+				},
+				"description": "글 생성"
+			},
+			"response": []
+		},
+		{
+			"name": "글 생성",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "SPECIAL 1",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"test입니다.\",\r\n    \"content\" : \"test임\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/posts/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "글 좋아요",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "SPECIAL 1",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/posts/4/like",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"4",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "글 수정",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "SPECIAL 1",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"hello~~~\",\r\n    \"content\":\"zzz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/posts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"2"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "\"hello~~~\"",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "글 삭제",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "SPECIAL 2",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/posts/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"posts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

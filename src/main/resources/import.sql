@@ -1,0 +1,31 @@
+INSERT INTO tbl_user("ACCOUNT_ID","ACCOUNT_TYPE","NICKNAME","QUIT") VALUES('test1','SPECIAL','test1',false)
+INSERT INTO tbl_user("ACCOUNT_ID","ACCOUNT_TYPE","NICKNAME","QUIT") VALUES('test2','NORMAL','test2',false)
+INSERT INTO tbl_user("ACCOUNT_ID","ACCOUNT_TYPE","NICKNAME","QUIT") VALUES('test3','REGULAR','test3',false)
+
+
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent1',2,'testTitle1',1)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent2',2,'testTitle1',1)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent3',2,'testTitle1',1)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent1',0,'testTitle1',2)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent2',1,'testTitle1',2)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent3',1,'testTitle1',2)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent1',1,'testTitle1',3)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent2',0,'testTitle1',3)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent3',0,'testTitle1',3)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent1',0,'testTitle1',1)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent2',0,'testTitle1',2)
+INSERT INTO tbl_post("CONTENT","LIKE_COUNT","TITLE","AUTHOR_USER_ID") VALUES('testContent3',0,'testTitle1',3)
+
+
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('1','1')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('2','1')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('3','1')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('1','2')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('2','2')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('3','2')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('5','3')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('6','3')
+INSERT INTO tbl_like("POST_ID","USER_ID") VALUES('7','3')
+
+
+
